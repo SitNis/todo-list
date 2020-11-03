@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" >
+        <div class='todo-list' id = "containerId"> </div>
+        <div class='new'> 
+        <div class='card'> 
+            <div class ="main">
+                <div class="Task">
+                    <label>Задача</label>
+                    <input type="text" id="nameValue">
+                </div> 
+                <div class="Task text"> 
+                    <Label>Текст задачи</Label>
+                    <textarea type="text" id="textValue" ></textarea>
+                </div>
+                <div class="Priorety"> 
+                    <label>Приоритет</label>
+                    <input type="range" id="prioretyValue" min="1" max="3">
+                </div> 
+                <button id="addButton">Добавить задачу</button>
+            </div>
+        </div></div>
+        <div class="completed" id="compl"></div>
+    </div>
+   
+    <script src="js/script.js"></script>
+    <script src="js/Element.js"></script>
+</body>
+</html>

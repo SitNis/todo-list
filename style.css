@@ -1,0 +1,37 @@
+.main{
+    background:linear-gradient(to right, red,orange,yellow,green,blue,pink);
+    height: 350px;
+    text-align: center;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: space-between;
+    color:whitesmoke;
+}
+
+.todo-list {
+    min-width: 30%;
+    background-color: #191970;
+    color:grey;
+    text-align: center;
+}
+#addButton{
+    color: snow;
+    background-color:darkblue;
+}
+#readyButton{
+    color: springgreen;
+    background-color: tomato;
+    margin-left: 30px;  
+}
+
+
+.new {
+    min-width: 30%;
+}
+.completed {
+    min-width: 30%
+}
