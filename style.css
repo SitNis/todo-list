@@ -1,37 +1,95 @@
 .main{
-    background:linear-gradient(to right, red,orange,yellow,green,blue,pink);
-    height: 350px;
+    background-blend-mode: screen;
+	background-blend-mode: multiply;
+	background-blend-mode: overlay;
+	background-blend-mode: darken;
+	background-blend-mode: soft-light;
+	background-blend-mode: luminosity;	
+	background:
+		linear-gradient(red, transparent),
+		linear-gradient(to top left, lime, transparent),
+		linear-gradient(to top right, blue, transparent);
+    height: 325px;
     text-align: center;
+    border-radius: 20px;
 }
+
 
 .container {
     display:flex;
     flex-direction: row;
     min-width: 100%;
     justify-content: space-between;
-    color:whitesmoke;
+    background: linear-gradient(21deg, #dd03e4, #5611ec); 
+    border-radius: 20px;
 }
+
 
 .todo-list {
     min-width: 30%;
-    background-color: #191970;
-    color:grey;
+    background: linear-gradient(3deg, #e6d16c, #16014c);
     text-align: center;
-}
-#addButton{
-    color: snow;
-    background-color:darkblue;
-}
-#readyButton{
-    color: springgreen;
-    background-color: tomato;
-    margin-left: 30px;  
+    border-radius: 20px;
 }
 
-
-.new {
+.new{
     min-width: 30%;
 }
+
 .completed {
-    min-width: 30%
+    min-width: 30%;
+    color: red;
+    text-align: center;
+    border-radius: 20px;
+    background: 
+		radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+
+#addButton{
+    color:springgreen;
+    background-color:tomato;
+    border-radius: 10px;
+    width: 100px;
+    font-family: "Comics Sans MS", Cursive;
+}
+
+#readyButton{
+    color: springgreen; 
+    background-color: tomato;
+    margin-top: 10px; 
+    border-radius: 10px;
+    font-family: "Comics Sans MS", Cursive;
+}
+
+#textValue{
+    width: 300px;
+    height: 100px;
+    resize: none;
+}
+
+#newTextarea{
+    width: 300px;
+    height: 100px;
+    resize: none;
+}
+
+#errorButton{
+    color: springgreen; 
+    background-color: tomato;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: "Comics Sans MS", Cursive;
+}
+
+
+
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    color:black;
+    font-family: "Comics Sans MS", Cursive;
+    font-weight: 400;
+    font-style:italic;
 }
